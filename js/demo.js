@@ -57,3 +57,8 @@ console.log(a)
 console.log(b)
 
 // Tính tiền lương
+var luong1Ngay = 100000;
+var songaylam = 5;
+var tinhTienLuong;
+tinhTienLuong = songaylam * luong1Ngay;
+console.log(tinhTienLuong)
