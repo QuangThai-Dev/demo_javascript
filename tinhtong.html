@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+
+</head>
+
+<body>
+    <form action="#">
+
+        Số a: <input type="text" id="soa">
+        <br/>
+        <br/> Số b: <input type="text" id="sob">
+        <br/>
+        <br/> Kết quả: <input type="text" id="kq">
+        <br/>
+        <br/>
+        <input type="button" value="Tính tổng" onclick="return TinhTong()"></input>
+    </form>
+
+    <script typr="text/javascript">
+        function TinhTong() {
+            var soa = document.getElementById("soa");
+            var sob = document.getElementById("sob");
+            var kq = document.getElementById("kq");
+            //NaN: Not a Number--> hàm kiểm tra số : isNaN(chuỗi)---> là False---> không phải số ---> True
+            if (isNaN(soa.value) || isNaN(sob.value)) {
+                alert("Nhập vào số a và b");
+                return false;
+            } else {
+                soa = parseFloat(soa.value);
+                sob = parseFloat(sob.value);
+                var tong = soa + sob;
+                kq.value = tong;
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>
