@@ -39,7 +39,8 @@ var tongDoanhThu;
 var tienTuThien;
 var tienConLai;
 var tongVe;
-tongVe = giaVeNguoiLon + giaVeTreEm;
+tongVe = soVeNguoiLon + soVeTreEm;
+console.log(tongVe)
 tongDoanhThu = (soVeNguoiLon * giaVeNguoiLon) + (soVeTreEm * giaVeTreEm);
 console.log(tongDoanhThu);
 tienTuThien = (tongDoanhThu * phanTram) / 100;
