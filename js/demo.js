@@ -61,4 +61,4 @@ var luong1Ngay = 100000;
 var songaylam = 5;
 var tinhTienLuong;
 tinhTienLuong = songaylam * luong1Ngay;
-console.log(tinhTienLuong)
+console.log(tinhTienLuong);
